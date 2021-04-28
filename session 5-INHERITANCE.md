@@ -576,4 +576,72 @@
     Account user;
     user.display();
     }
-    
+**15).Multilevel Inheritance for Student Marklist**
+
+        #include <iostream>
+        #include<string.h>
+        using namespace std;
+        class student
+        {
+            public:
+            char fname[20],lname[20];
+            int phno;
+ 
+            void getdata()
+            {
+                cin>>fname;
+                cin>>lname;
+                cin>>phno;
+            }
+            void display()
+            {
+                cout<<"First Name: "<<fname<<endl;
+                cout<<"Last Name: "<<lname<<endl;
+                cout<<"Phone: "<<phno<<endl;
+            }
+ 
+            };
+
+            class grade:public student
+            {
+            public:
+                char g[5];
+                int score;
+ 
+                grade()
+                {
+                strcpy(g,"O");
+                score=0;
+                    }
+ 
+ 
+                void calculate()
+                {
+                cin>>score;
+                    if (score <40)
+                        strcpy(g,"D");
+                    else if(score<=40 && score<60)
+                        strcpy(g,"C");
+                    else if(score<=60 && score<75)
+                            strcpy(g,"B");
+                    else if(score<=75 && score<90)
+                            strcpy(g,"A");
+                    else
+                            strcpy(g,"O");
+                }
+                void disp()
+                {   
+                cout<<"Grade: "<<g<<endl;
+                }
+                 };
+           
+             
+            int main() {
+            grade o;
+                     o.getdata();
+                     o.display();
+                    o.calculate();
+                    o.disp();
+            return 0;
+        }
+        
