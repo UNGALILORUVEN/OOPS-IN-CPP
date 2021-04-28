@@ -606,7 +606,7 @@
                     obj.disp();
                     return 0;
                     }
-**15). Lomda
+**15).Lomda**
 
         #include <iostream>
         using namespace std;
