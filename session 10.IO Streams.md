@@ -189,6 +189,22 @@
     }
 **11).IOST11**
 
+        #include <iostream>
+        #include <stdio.h>
+        using namespace std;
+        int main() {
+            int t=2;
+        while(t)
+        {  char b[100];
+        int i=0;
+            cin.getline(b,30);
+            cout.write(b,5);
+                cout<<endl;
+        t--;
+        }
+        return 0;
+        }
+   
 **13).IOST13**
 
 
@@ -209,6 +225,41 @@
     }
 **14).IOST14**
 
+    #include <iostream>
+    using namespace std;
+
+    int main()
+    {
+        float n;
+        float pi;
+        cin >> n;
+        int i = 0;
+        int n1 = n;
+        while (n > 0)
+        {
+            pi=(float)22/7;
+            cout.precision(n);
+            cout << pi;
+            while (i)
+            {
+                cout << '*';
+                i--;
+            }
+            i = n1 - n + 1;
+                n--;
+            cout << endl;
+            }
+            cout << "3" << endl
+                << "Fill Setting:*";
+
+            return 0;
+            }
+            void d()
+            {
+                cout.fill('a');
+                cout.width(10);
+            }
+            
 **15).IOST15**
 
         #include <iostream>
