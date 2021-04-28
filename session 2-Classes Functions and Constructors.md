@@ -649,7 +649,43 @@
 
                 return 0;
             }
+   **16).Inner and Outer**
    
-++++=======================================================================++++
+        #include <iostream>
+        using namespace std;
 
-PLEASE UPDATE WITH LEFT OVER CODINGS
+        class outer
+        {
+            public:
+            int x;
+            void get()
+            {
+                cin>>x;
+            }
+ 
+            class inner
+            {
+                private:
+                int y;
+                public:
+                void get()
+                {
+                    cin>>y;
+                 }
+                void sum()
+                {
+                    outer k;
+                    k.get();
+                    cout<<k.x+y;
+                }
+            };
+        };
+            main()
+            {
+                outer::inner b;
+                b.get();
+                b.sum();
+       
+ 
+                }
+        
